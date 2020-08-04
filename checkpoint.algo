@@ -8,11 +8,11 @@ vowels : ARRAY_OF CHAR [6];
 BEGIN
     //initialisation
     vowels:=['a','o','i','y','u','e'];
-    lenSentence:=1;
+    lenSentence:=0;
     nbrWords:=0;
     nbrVowels:=0;
     // instructions 
-    WHILE (str[i] <> ".") DO
+    FOR i FROM 0 TO (str.length-1) STEP 1  DO
         lenSentence++;
         if(str[i] = " "){
             nbrWords++;
@@ -22,6 +22,6 @@ BEGIN
                nbrVowels++;
            }
         END_FOR
-      i++;   
-    END_WHILE
+        
+    END_FOR
 END
