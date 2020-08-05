@@ -6,7 +6,9 @@ nbrVowels: INTEGER;
 str: STRING;
 vowels : ARRAY_OF CHAR [6];
 BEGIN
+     read(str);
     //initialisation
+    str := str.toLowerCase();
     vowels:=['a','o','i','y','u','e'];
     lenSentence:=0;
     nbrWords:=0;
